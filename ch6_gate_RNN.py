@@ -68,6 +68,7 @@ class LSTM:
         self.cache = (x, h_prev, c_prev, i, f, g, o, c_next)
         return h_next, c_next
 
+# TimeSTM class 구현
 class TimeSTM:
     def __init__(self, Wx, Wh, b, stateful=False):
         self.params = [Wx, Wh, b]
